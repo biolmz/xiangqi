@@ -1,0 +1,42 @@
+中国象棋 · macOS 版（版本 1.0.1）
+====================================
+
+【安装 / 运行】
+  1) 双击 中国象棋-1.0.1.dmg 挂载磁盘映像；
+  2) 把「中国象棋.app」拖进「应用程序」文件夹；
+  3) 双击启动。
+  前提：Mac 上已安装 Java 17 或更高版本（Temurin / Oracle JDK 均可）。
+
+  首次打开若提示「无法验证开发者」或「已损坏」：
+    · 在访达中右键点击 App → 打开 → 再点「打开」；或
+    · 终端执行：xattr -dr com.apple.quarantine "/Applications/中国象棋.app"
+
+  说明：App 未做 Apple 开发者签名与公证，这是 Gatekeeper 的正常拦截，
+  与程序本身无关。
+
+【生成原生安装包（可选，自带运行时）】
+  在 Mac 上装好 JDK 17+ 后，双击 build-mac.command。
+  它调用 macOS 平台的 jpackage，生成：
+    dist/中国象棋.app          自带裁剪 Java 运行时，无需另装 Java
+    dist/中国象棋-1.0.1.dmg    原生磁盘映像
+  若要把 dmg 分发给其他 Mac 且不出现安全提示，仍需 Apple 证书
+  签名并公证（codesign + notarytool）。
+
+【关于本 dmg 的格式】
+  jpackage 只能为当前系统生成原生包，所以这个 .dmg 是在 Windows 上以
+  ISO9660 + Rock Ridge 容器制作的（Rock Ridge 保存了中文文件名与
+  launcher 的可执行权限），macOS 的 DiskImageMounter 通过内容嗅探挂载。
+  若个别系统上挂载异常或 App 无法启动，请改用同目录的
+  中国象棋-Mac-1.0.1.zip（内附权限已验证的 .app 与 build-mac.command）。
+
+【功能】
+  完整中国象棋规则、三档电脑对手、悔棋、中文棋谱、将军提示；
+  局面指纹驱动的循环裁决：三次重复判和、单方长将判负，
+  电脑搜索会主动回避重复局面，不会用同一招反复将军兜圈。
+
+【项目文件】
+  中国象棋.app/Contents/Resources/Xiangqi.jar   游戏主程序
+  中国象棋.app/Contents/Resources/icon.icns     macOS 图标
+  payload/Xiangqi.jar / payload/icon.icns      zip 包内的同两份资源
+  src/chess/            桌面 / 安卓共用的纯 Java 规则引擎与 AI
+  android/              安卓版源码

@@ -1,0 +1,17 @@
+# 构建中间产物
+build/
+tools/
+*.class
+
+# 本地产物（安装包走 GitHub Release，不进仓库）
+release/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# 本地临时
+*.log

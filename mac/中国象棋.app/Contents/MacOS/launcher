@@ -1,0 +1,20 @@
+#!/bin/bash
+# 中国象棋 macOS 启动器：优先使用内嵌运行时，其次查找系统 Java 17+
+DIR="$(cd "$(dirname "$0")/../Resources" && pwd)"
+cd "$DIR" || exit 1
+
+if [ -x "$DIR/runtime/Contents/Home/bin/java" ]; then
+    JAVA="$DIR/runtime/Contents/Home/bin/java"
+elif [ -x /usr/libexec/java_home ] && /usr/libexec/java_home -v 17 >/dev/null 2>&1; then
+    JAVA="$(/usr/libexec/java_home -v 17)/bin/java"
+elif command -v java >/dev/null 2>&1; then
+    JAVA="$(command -v java)"
+else
+    osascript -e 'display dialog "中国象棋需要 Java 17 或更高版本。请安装 Temurin / Oracle JDK，或运行 build-mac.command 生成自带运行时的版本。" buttons {"好"} default button 1 with title "中国象棋"' >/dev/null 2>&1
+    exit 1
+fi
+
+exec "$JAVA" -Dfile.encoding=UTF-8 \
+     -Xdock:name="中国象棋" \
+     -Xdock:icon="$DIR/icon.icns" \
+     -jar "$DIR/Xiangqi.jar"

@@ -1,0 +1,19 @@
+* text=auto
+
+# 必须保持 LF 的脚本（macOS 上直接执行）
+*.sh        text eol=lf
+*.command   text eol=lf
+mac/*/Contents/MacOS/launcher text eol=lf
+android/build-apk.sh          text eol=lf
+
+# Windows 批处理
+*.bat       text eol=crlf
+
+# 二进制
+*.jar   binary
+*.png   binary
+*.icns  binary
+*.ico   binary
+*.exe   binary
+*.dmg   binary
+*.apk   binary
