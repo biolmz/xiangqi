@@ -8,10 +8,10 @@
 
 | 平台 | 文件 | 大小 | 说明 |
 |---|---|---|---|
-| Windows | `中国象棋-安装包-1.0.1.exe` | 28.5 MB | 安装向导，内嵌裁剪后的 Java 运行时，无需另装 Java |
-| macOS | `中国象棋-1.0.1.dmg` | 184 KB | 磁盘映像，需系统已装 Java 17+ |
-| macOS | `中国象棋-Mac-1.0.1.zip` | 225 KB | 备用包，dmg 挂载异常时使用 |
-| Android | `中国象棋-1.0.1.apk` | 40.5 KB | Android 7.0（API 24）及以上 |
+| Windows | `Xiangqi-1.0.1-setup.exe` | 28.5 MB | 安装向导，内嵌裁剪后的 Java 运行时，无需另装 Java |
+| macOS | `Xiangqi-1.0.1.dmg` | 184 KB | 磁盘映像，需系统已装 Java 17+ |
+| macOS | `Xiangqi-1.0.1-mac.zip` | 225 KB | 备用包，dmg 挂载异常时使用 |
+| Android | `Xiangqi-1.0.1.apk` | 40.5 KB | Android 7.0（API 24）及以上 |
 
 ### 这一版的重点：不再兜圈
 
@@ -35,8 +35,8 @@
 ### 校验
 
 ```
-a361446a5904f76961c394fa5b4be6ea0699c795989bcc20ce9655f6a2066c47  中国象棋-安装包-1.0.1.exe
-2da578807d306c99157e4009521d378389353df83e216114af7f3314406e3b13  中国象棋-1.0.1.dmg
-c65f81f172e91f94657d051dbdf7d95f94bcc98dd339743bfae13242283b9123  中国象棋-Mac-1.0.1.zip
-1cd395ce73aebacb95fdfed80dce590edaca7558ca55721c2fd5e69a0bf9499c  中国象棋-1.0.1.apk
+a361446a5904f76961c394fa5b4be6ea0699c795989bcc20ce9655f6a2066c47  Xiangqi-1.0.1-setup.exe
+2da578807d306c99157e4009521d378389353df83e216114af7f3314406e3b13  Xiangqi-1.0.1.dmg
+c65f81f172e91f94657d051dbdf7d95f94bcc98dd339743bfae13242283b9123  Xiangqi-1.0.1-mac.zip
+1cd395ce73aebacb95fdfed80dce590edaca7558ca55721c2fd5e69a0bf9499c  Xiangqi-1.0.1.apk
 ```

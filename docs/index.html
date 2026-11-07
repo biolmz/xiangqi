@@ -363,7 +363,7 @@
 
     <div class="panel on" id="panel-win" role="tabpanel">
       <ol>
-        <li>下载并双击 <strong>中国象棋-安装包-1.0.1.exe</strong>。</li>
+        <li>下载并双击 <strong>Xiangqi-1.0.1-setup.exe</strong>。</li>
         <li>SmartScreen 若提示「Windows 已保护你的电脑」，点 <strong>更多信息 → 仍要运行</strong>（安装包未做代码签名，属正常提示）。</li>
         <li>跟着向导走完，桌面与开始菜单会出现「中国象棋」。</li>
         <li>卸载：设置 → 应用 → 中国象棋 → 卸载。</li>
@@ -376,7 +376,7 @@
 
     <div class="panel" id="panel-mac" role="tabpanel">
       <ol>
-        <li>下载 <strong>中国象棋-1.0.1.dmg</strong>，双击挂载。</li>
+        <li>下载 <strong>Xiangqi-1.0.1.dmg</strong>，双击挂载。</li>
         <li>把「中国象棋.app」拖进「应用程序」文件夹。</li>
         <li>双击启动。首次打开若提示「无法验证开发者」或「已损坏」，见下方说明。</li>
       </ol>
@@ -385,13 +385,13 @@
         · 访达里 <b>右键点 App → 打开 → 再点「打开」</b>；<br>
         · 或终端执行 <code>xattr -dr com.apple.quarantine "/Applications/中国象棋.app"</code>。<br><br>
         <b>需要 Java 17 或更高版本</b>（Temurin / Oracle JDK 均可），可用 <code>java -version</code> 确认。
-        如果 dmg 在这台机器上挂载异常，改用 <b>中国象棋-Mac-1.0.1.zip</b>：解压后同样是一个可直接运行的 .app。
+        如果 dmg 在这台机器上挂载异常，改用 <b>Xiangqi-1.0.1-mac.zip</b>：解压后同样是一个可直接运行的 .app。
       </div>
     </div>
 
     <div class="panel" id="panel-and" role="tabpanel">
       <ol>
-        <li>下载 <strong>中国象棋-1.0.1.apk</strong>。</li>
+        <li>下载 <strong>Xiangqi-1.0.1.apk</strong>。</li>
         <li>点击安装时，系统会提示「未知来源」——在弹窗里允许浏览器或文件管理器安装应用。</li>
         <li>若被 Play Protect 拦下，选 <strong>仍然安装</strong>。</li>
       </ol>
@@ -460,28 +460,28 @@ const RELEASE_URL = `${REPO_URL}/releases/download/${TAG}/`;
 const FILES = [
   {
     os: 'Windows', cls: 'win',
-    file: '中国象棋-安装包-1.0.1.exe',
+    file: 'Xiangqi-1.0.1-setup.exe',
     size: '28.5 MB', bytes: 28497408,
     desc: '安装向导，内嵌裁剪后的 Java 运行时，装完即用，无需另装 Java。',
     sha: 'a361446a5904f76961c394fa5b4be6ea0699c795989bcc20ce9655f6a2066c47'
   },
   {
     os: 'macOS', cls: 'mac',
-    file: '中国象棋-1.0.1.dmg',
+    file: 'Xiangqi-1.0.1.dmg',
     size: '184 KB', bytes: 188416,
     desc: '磁盘映像，挂载后把 App 拖进「应用程序」。需要系统已装 Java 17+。',
     sha: '2da578807d306c99157e4009521d378389353df83e216114af7f3314406e3b13'
   },
   {
     os: 'macOS', cls: 'mac',
-    file: '中国象棋-Mac-1.0.1.zip',
+    file: 'Xiangqi-1.0.1-mac.zip',
     size: '225 KB', bytes: 230370,
     desc: '备用包。dmg 挂载异常时用它，解压即得可运行的 .app，另附生成原生 dmg 的脚本。',
     sha: 'c65f81f172e91f94657d051dbdf7d95f94bcc98dd339743bfae13242283b9123'
   },
   {
     os: 'Android', cls: 'apk',
-    file: '中国象棋-1.0.1.apk',
+    file: 'Xiangqi-1.0.1.apk',
     size: '40.5 KB', bytes: 41461,
     desc: '直装包，Android 7.0 及以上。自绘棋盘，横竖屏自适应。',
     sha: '1cd395ce73aebacb95fdfed80dce590edaca7558ca55721c2fd5e69a0bf9499c'

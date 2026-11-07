@@ -8,10 +8,10 @@
 
 | 平台 | 文件 | 大小 | 说明 |
 |---|---|---|---|
-| Windows | [中国象棋-安装包-1.0.1.exe](https://github.com/biolmz/xiangqi/releases/latest/download/中国象棋-安装包-1.0.1.exe) | 28.5 MB | 安装向导，内嵌裁剪后的 Java 运行时，无需另装 Java |
-| macOS | [中国象棋-1.0.1.dmg](https://github.com/biolmz/xiangqi/releases/latest/download/中国象棋-1.0.1.dmg) | 184 KB | 磁盘映像，需系统已装 Java 17+ |
-| macOS | [中国象棋-Mac-1.0.1.zip](https://github.com/biolmz/xiangqi/releases/latest/download/中国象棋-Mac-1.0.1.zip) | 225 KB | 备用包，dmg 挂载异常时使用 |
-| Android | [中国象棋-1.0.1.apk](https://github.com/biolmz/xiangqi/releases/latest/download/中国象棋-1.0.1.apk) | 40.5 KB | Android 7.0（API 24）及以上 |
+| Windows | [Xiangqi-1.0.1-setup.exe](https://github.com/biolmz/xiangqi/releases/latest/download/Xiangqi-1.0.1-setup.exe) | 28.5 MB | 安装向导，内嵌裁剪后的 Java 运行时，无需另装 Java |
+| macOS | [Xiangqi-1.0.1.dmg](https://github.com/biolmz/xiangqi/releases/latest/download/Xiangqi-1.0.1.dmg) | 184 KB | 磁盘映像，需系统已装 Java 17+ |
+| macOS | [Xiangqi-1.0.1-mac.zip](https://github.com/biolmz/xiangqi/releases/latest/download/Xiangqi-1.0.1-mac.zip) | 225 KB | 备用包，dmg 挂载异常时使用 |
+| Android | [Xiangqi-1.0.1.apk](https://github.com/biolmz/xiangqi/releases/latest/download/Xiangqi-1.0.1.apk) | 40.5 KB | Android 7.0（API 24）及以上 |
 
 SHA-256 校验值与各平台的安装步骤见 [安装页面](https://biolmz.github.io/xiangqi/)。
 
